@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Function to connect to the database and create the table if it doesn't exist
+#connecting db
 def initialize_database():
     conn = sqlite3.connect('diary.db')
     cursor = conn.cursor()
@@ -19,7 +19,7 @@ def initialize_database():
     conn.commit()
     conn.close()
 
-# Helper function to fetch all entries as a list of dictionaries
+
 def get_entries():
     conn = sqlite3.connect('diary.db')
     cursor = conn.cursor()
