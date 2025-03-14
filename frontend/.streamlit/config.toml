@@ -1,8 +1,0 @@
-[server]
-enableCORS = false
-
-[theme]
-base = "light"
-
-[global]
-hideTopBar = true
