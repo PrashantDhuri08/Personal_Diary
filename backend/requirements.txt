@@ -1,2 +1,9 @@
-Flask==2.0.2
-sqlite3
+Flask
+
+
+
+streamlit
+Flask-Cors
+Jinja2
+gunicorn
+requests
