@@ -1,7 +1,6 @@
 Flask
 
 
-
 streamlit
 Flask-Cors
 Jinja2
