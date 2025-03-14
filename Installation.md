@@ -6,19 +6,15 @@
 pip install virtualenv
 ```
 
-## 2. Navigate to Backend Directory
 
-```sh
-cd backend
-```
 
-## 3. Create a Virtual Environment
+## 2. Create a Virtual Environment
 
 ```sh
 python -m venv env
 ```
 
-## 4. Activate the Virtual Environment
+## 3. Activate the Virtual Environment
 
 On Windows:
 
@@ -32,24 +28,28 @@ On macOS/Linux:
 source env/bin/activate
 ```
 
-### Check if SQLite is present in your env if not then you have to install it first
 
-## 5. Install Required Dependencies
+
+
+## 4. Install Required Dependencies
+
 
 ```sh
 pip install -r requirements.txt
 ```
 
-## 6. Run the Project
+## 5. Run the Project
 
 ### Run the API
 
 ```sh
+cd backend
 python diary_api.py
 ```
 
 ### Run the Frontend (on seperate terminal)
 
 ```sh
+cd frontend
 python app.py
 ```
