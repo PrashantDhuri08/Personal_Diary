@@ -72,3 +72,7 @@ python diary_api.py
 cd frontend
 python app.py
 ```
+
+Created by:-
+Prashant Dhuri,
+Harsh Dubey
