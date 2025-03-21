@@ -1,6 +1,47 @@
+# Python environment
+frontend/venv/
+backend/venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-virtual_env/
+# Database files
+*.db
+*.sqlite
+*.sqlite3
 
-backend/d_env/
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.venv
+venv/
+ENV/
+
+# Local directories
+.idea/
+.vscode/
+.DS_Store
+
+# Personal Diary specific
 backend/diary.db
+logs/
 
