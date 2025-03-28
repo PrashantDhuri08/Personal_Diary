@@ -170,33 +170,6 @@ st.markdown("""
         margin-left: 8px;
     }
     
-    /* Create new entry button */
-    .new-entry-btn {
-        position: fixed;
-        right: 30px;
-        bottom: 30px;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background-color: #fff;
-        color: #202124;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 999;
-        transition: all 0.2s;
-        border: 1px solid #e0e0e0;
-    }
-    
-    .new-entry-btn:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transform: translateY(-2px);
-        background-color: #f8f8f8;
-    }
-    
     /* Back button styling */
     .back-button {
         display: inline-flex;
@@ -1071,18 +1044,6 @@ if st.session_state.view == "home":
                 # Show normal view with title
                 st.markdown("<h2 style='color: #4285f4;'>📝 Your Notes</h2>", unsafe_allow_html=True)
                 
-                # Add a "New Entry" button in the top-right corner
-                st.markdown(
-                    """
-                    <div onclick="document.querySelector('[data-testid=stSidebar]').style.display = 'none'; 
-                                  (function(){const buttons = Array.from(document.querySelectorAll('button')); 
-                                  const newButton = buttons.find(el => el.innerText === '+ New Note'); 
-                                  if(newButton) newButton.click();})();" 
-                               class="new-entry-btn">+</div>
-                    """,
-                    unsafe_allow_html=True
-                )
-                
                 # Button to show the form
                 col1, col2 = st.columns([1, 5])
                 with col1:
@@ -1181,18 +1142,6 @@ elif st.session_state.view == "archive":
             else:
                 # Show normal view with title
                 st.markdown("<h2 style='color: #4285f4;'>🗃️ Archived Notes</h2>", unsafe_allow_html=True)
-                
-                # Add a "New Entry" button in the top-right corner (same as home)
-                st.markdown(
-                    """
-                    <div onclick="document.querySelector('[data-testid=stSidebar]').style.display = 'none'; 
-                                  (function(){const buttons = Array.from(document.querySelectorAll('button')); 
-                                  const newButton = buttons.find(el => el.innerText === '+ New Note'); 
-                                  if(newButton) newButton.click();})();" 
-                               class="new-entry-btn">+</div>
-                    """,
-                    unsafe_allow_html=True
-                )
                 
                 # Button to show the form
                 col1, col2 = st.columns([1, 5])
@@ -1300,18 +1249,6 @@ elif st.session_state.view == "entries":
             else:
                 # Show normal view with title
                 st.markdown("<h2 style='color: #4285f4;'>📒 All Entries</h2>", unsafe_allow_html=True)
-                
-                # Add a "New Entry" button in the top-right corner (same as home)
-                st.markdown(
-                    """
-                    <div onclick="document.querySelector('[data-testid=stSidebar]').style.display = 'none'; 
-                                  (function(){const buttons = Array.from(document.querySelectorAll('button')); 
-                                  const newButton = buttons.find(el => el.innerText === '+ New Note'); 
-                                  if(newButton) newButton.click();})();" 
-                               class="new-entry-btn">+</div>
-                    """,
-                    unsafe_allow_html=True
-                )
                 
                 # Button to show the form
                 col1, col2 = st.columns([1, 5])

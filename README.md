@@ -1,4 +1,3 @@
-
 # Personal Diary Application
 
 A web-based personal diary application with Streamlit frontend and Python backend.
@@ -14,6 +13,9 @@ A web-based personal diary application with Streamlit frontend and Python backen
 2. Navigate to the project directory
 3. Run the setup script:
 
+```bash
+python setup.py
+```
 
 4. Activate the virtual environment:
    - Windows: `venv\Scripts\activate`
@@ -138,13 +140,13 @@ To run the parts individually:
 #### Frontend
 ```
 cd frontend
-npm start
+streamlit run app.py
 ```
 
 #### Backend
 ```
 cd backend
-npm start
+python app.py
 ```
 
 Created by:-
